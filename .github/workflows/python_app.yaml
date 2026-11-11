@@ -57,10 +57,9 @@ jobs:
       run: |
         uvx ruff check
 
-    # TODO: Add steps to run formatting steps and type checking
     - name: format with ruff
       run: |
-        uvx ruff format
+        uvx ruff format --check
 
     - name: sort libraries
       run: |
