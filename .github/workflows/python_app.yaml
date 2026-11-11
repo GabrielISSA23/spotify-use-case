@@ -55,12 +55,12 @@ jobs:
     # TODO: Replace the run block to use our preferred linter
     - name: Lint with ruff 
       run: |
-        uv run ruff check
+        uvx ruff check
 
     # TODO: Add steps to run formatting steps and type checking
     - name: format with ruff
       run: |
-        uv run ruff format
+        uvx ruff format
 
     - name: sort libraries
       run: |
@@ -68,4 +68,4 @@ jobs:
     
     - name: type checking with ty 
       run: | 
-        uv ty check 
+        uvx ty check 
